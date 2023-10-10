@@ -1,0 +1,15 @@
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\bin\Debug\net6.0\Rectangle Perimeter.exe
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\bin\Debug\net6.0\Rectangle Perimeter.deps.json
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\bin\Debug\net6.0\Rectangle Perimeter.runtimeconfig.json
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\bin\Debug\net6.0\Rectangle Perimeter.dll
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\bin\Debug\net6.0\Rectangle Perimeter.pdb
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\obj\Debug\net6.0\Rectangle Perimeter.csproj.AssemblyReference.cache
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\obj\Debug\net6.0\Rectangle Perimeter.GeneratedMSBuildEditorConfig.editorconfig
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\obj\Debug\net6.0\Rectangle Perimeter.AssemblyInfoInputs.cache
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\obj\Debug\net6.0\Rectangle Perimeter.AssemblyInfo.cs
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\obj\Debug\net6.0\Rectangle Perimeter.csproj.CoreCompileInputs.cache
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\obj\Debug\net6.0\Rectangle Perimeter.dll
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\obj\Debug\net6.0\refint\Rectangle Perimeter.dll
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\obj\Debug\net6.0\Rectangle Perimeter.pdb
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\obj\Debug\net6.0\Rectangle Perimeter.genruntimeconfig.cache
+D:\530240\Assignment 1\Rectangle Perimeter\Rectangle Perimeter\obj\Debug\net6.0\ref\Rectangle Perimeter.dll
