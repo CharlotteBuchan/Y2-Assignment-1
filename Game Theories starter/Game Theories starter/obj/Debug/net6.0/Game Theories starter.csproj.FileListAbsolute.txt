@@ -1,0 +1,15 @@
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\bin\Debug\net6.0\Game Theories starter.exe
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\bin\Debug\net6.0\Game Theories starter.deps.json
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\bin\Debug\net6.0\Game Theories starter.runtimeconfig.json
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\bin\Debug\net6.0\Game Theories starter.dll
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\bin\Debug\net6.0\Game Theories starter.pdb
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\obj\Debug\net6.0\Game Theories starter.csproj.AssemblyReference.cache
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\obj\Debug\net6.0\Game Theories starter.GeneratedMSBuildEditorConfig.editorconfig
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\obj\Debug\net6.0\Game Theories starter.AssemblyInfoInputs.cache
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\obj\Debug\net6.0\Game Theories starter.AssemblyInfo.cs
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\obj\Debug\net6.0\Game Theories starter.csproj.CoreCompileInputs.cache
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\obj\Debug\net6.0\Game Theories starter.dll
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\obj\Debug\net6.0\refint\Game Theories starter.dll
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\obj\Debug\net6.0\Game Theories starter.pdb
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\obj\Debug\net6.0\Game Theories starter.genruntimeconfig.cache
+D:\530240\Y2-Assignment-1\Game Theories starter\Game Theories starter\obj\Debug\net6.0\ref\Game Theories starter.dll
