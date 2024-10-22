@@ -36,6 +36,10 @@ public class ColourPickerControl : MonoBehaviour
 
         CreateOutputImage();
 
+        currentHue = 0;
+        currentsat = 0;
+        currentVal = 1;
+
         UpdateOutputImage();
     }
 

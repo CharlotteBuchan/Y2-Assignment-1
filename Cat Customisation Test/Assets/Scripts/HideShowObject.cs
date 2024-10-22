@@ -6,6 +6,7 @@ public class HideShowObject : MonoBehaviour
 {
     public string modelName;
     [SerializeField] private GameObject model;
+    [SerializeField] private GameObject UI;
 
 
     private void Start()
@@ -15,24 +16,56 @@ public class HideShowObject : MonoBehaviour
 
     public void Hide()
     {
-        zAxisHide();
-    }
-
-    public void Show()
-    {
-        zAxisShow();
-    }
-
-    public void HideOrShow()
-    {
-        if (!IsHidden())
+        if (model != null)
         {
             zAxisHide();
         }
 
-        else if (IsHidden())
+        else
+        {
+            UI.SetActive(false);
+        }
+    }
+
+    public void Show()
+    {
+        if (model != null)
         {
             zAxisShow();
+        }
+
+        else
+        {
+            UI.SetActive(true);
+        }
+    }
+
+    public void HideOrShow()
+    {
+        if (model != null)
+        {
+            if (!IsHidden())
+            {
+                zAxisHide();
+            }
+
+            else if (IsHidden())
+            {
+                zAxisShow();
+            }
+        }
+
+        else
+        {
+            if (UI.activeSelf == false)
+            {
+                UI.SetActive(true);
+            }
+
+            else 
+            {
+                UI.SetActive(false);
+            }
         }
     }
 
