@@ -13,7 +13,14 @@ public class SVImageControls : MonoBehaviour, IDragHandler, IPointerClickHandler
 
     private ColourPickerControl CC;
 
+    public GameObject pickerHolder;
+
     private RectTransform rectTransform, pickerTransform;
+
+    // Calculate the boundaries based on the rect size
+
+    float halfWidth;
+    float halfHeight;
 
     private void Awake()
     {
@@ -21,32 +28,49 @@ public class SVImageControls : MonoBehaviour, IDragHandler, IPointerClickHandler
         CC = FindObjectOfType<ColourPickerControl>();
         rectTransform = GetComponent<RectTransform>();
 
+        
+
         pickerTransform = pickerImage.GetComponent<RectTransform>();
-        pickerTransform.position = new Vector2(-(rectTransform.sizeDelta.x * 0.5f), -(rectTransform.sizeDelta.y * 0.5f));
+        //pickerTransform.position = new Vector2(pickerHolder.transform.position.x, pickerHolder.transform.position.y);
+
+       
+        // Calculate half width and half height
+        halfWidth = pickerTransform.rect.width * 1.5f;
+        halfHeight = pickerTransform.rect.height * 1.5f;
+
+        // Set the pickerTransform to the top-left position of the pickerHolder
+        Vector2 topLeftPosition = pickerTransform.position + new Vector3(-halfWidth, halfHeight, 0);
+        pickerTransform.position = topLeftPosition;
 
     }
 
     void UpdateColour(PointerEventData eventData)
     {
-        Vector3 pos = rectTransform.InverseTransformPoint(eventData.position);
+        // Convert the event position to the local coordinate system of the picker
+        Vector2 localPoint;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(rectTransform, eventData.position, eventData.pressEventCamera, out localPoint);
 
-        float deltaX = rectTransform.sizeDelta.x * 0.5f;
-        float deltaY = rectTransform.sizeDelta.y * 0.5f;
+        halfWidth = pickerHolder.GetComponent<RectTransform>().rect.width * 0.5f;
+        halfHeight = pickerHolder.GetComponent<RectTransform>().rect.height * 0.5f;
 
-        pos.x = Mathf.Clamp(pos.x, -deltaX, deltaX);
-        pos.y = Mathf.Clamp(pos.y, -deltaY, deltaY);
+        // Clamp the position
+        localPoint.x = Mathf.Clamp(localPoint.x, -halfWidth, halfWidth);
+        localPoint.y = Mathf.Clamp(localPoint.y, -halfHeight, halfHeight);
 
-        float x = pos.x + deltaX;
-        float y = pos.y + deltaY;
+        // Set the picker position and color
+        pickerTransform.localPosition = localPoint;
 
-        float xNorm = x / rectTransform.sizeDelta.x;
-        float yNorm = y / rectTransform.sizeDelta.y;
+        // Normalize the position for SV
+        float xNorm = (localPoint.x + halfWidth) / (2 * halfWidth);
+        float yNorm = (localPoint.y + halfHeight) / (2 * halfHeight);
 
-        pickerTransform.localPosition = pos;
+        // Update the color based on the vertical position
         pickerImage.color = Color.HSVToRGB(0, 0, 1 - yNorm);
 
+        // Pass normalized values to ColourPickerControl
         CC.SetSV(xNorm, yNorm);
-        //Debug.Log("wow");
+
+
     }
 
     public void OnDrag(PointerEventData eventData)
