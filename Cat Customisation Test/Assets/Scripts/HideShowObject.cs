@@ -9,7 +9,7 @@ public class HideShowObject : MonoBehaviour
 
     private void Start()
     {
-        GameObject model = GameObject.Find(modelName);
+        model = GameObject.Find(modelName);
     }
 
     public void Hide()
