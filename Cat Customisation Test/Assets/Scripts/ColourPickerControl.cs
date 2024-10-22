@@ -1,6 +1,7 @@
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
+//using System.Drawing;
 
 public class ColourPickerControl : MonoBehaviour
 {
@@ -19,10 +20,16 @@ public class ColourPickerControl : MonoBehaviour
     private Texture2D hueTexture, svTexture, outputTexture;
 
     [SerializeField]
-    GameObject changeThisColour;
+    private string model;
+
+    public SkinnedMeshRenderer skinMeshRenderer;
+
+    public Color currentColour;
 
     private void Start()
     {
+        skinMeshRenderer = GameObject.Find(model).GetComponent<SkinnedMeshRenderer>();
+
         CreateHueImage();
 
         CreateSVImage();
@@ -92,6 +99,12 @@ public class ColourPickerControl : MonoBehaviour
 
     }
 
+    public Color GetColor()
+    {
+        currentColour = Color.HSVToRGB(currentHue, currentsat, currentVal);
+        return currentColour;
+    }
+
     private void UpdateOutputImage()
     {
         Color currentColour = Color.HSVToRGB(currentHue, currentsat, currentVal);
@@ -105,7 +118,9 @@ public class ColourPickerControl : MonoBehaviour
 
         hexInputField.text = ColorUtility.ToHtmlStringRGB(currentColour);
 
-        changeThisColour.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", currentColour);
+        skinMeshRenderer.material.SetColor("_Color", currentColour);
+
+        GetColor();
     }
 
     public void SetSV(float S, float V)

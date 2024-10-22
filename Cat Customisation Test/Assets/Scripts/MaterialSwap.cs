@@ -8,6 +8,10 @@ public class MaterialSwap : MonoBehaviour
     [SerializeField] string model;
     [SerializeField] Material material;
 
+    public ColourPickerControl colourPickerControl;
+
+    public Color newColour;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +26,8 @@ public class MaterialSwap : MonoBehaviour
 
     public void ChangeMaterial()
     {
+        newColour = colourPickerControl.GetColor();
         skinMeshRenderer.material = material;
+        skinMeshRenderer.material.SetColor("_Color", newColour);
     }
 }

@@ -46,6 +46,7 @@ public class SVImageControls : MonoBehaviour, IDragHandler, IPointerClickHandler
         pickerImage.color = Color.HSVToRGB(0, 0, 1 - yNorm);
 
         CC.SetSV(xNorm, yNorm);
+        //Debug.Log("wow");
     }
 
     public void OnDrag(PointerEventData eventData)
