@@ -27,6 +27,11 @@ public class MaterialSwap : MonoBehaviour
     public void ChangeMaterial()
     {
         newColour = colourPickerControl.GetColor();
+
+        if (newColour == null)
+        {
+            Debug.Log("a");
+        }
         skinMeshRenderer.material = material;
         skinMeshRenderer.material.SetColor("_Color", newColour);
     }

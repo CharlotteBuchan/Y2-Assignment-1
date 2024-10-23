@@ -632,8 +632,9 @@ GameObject:
   - component: {fileID: 63916518}
   - component: {fileID: 63916517}
   - component: {fileID: 63916516}
+  - component: {fileID: 63916519}
   m_Layer: 5
-  m_Name: Ginger
+  m_Name: Plain Fur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -656,7 +657,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 397.5, y: -387.5}
+  m_AnchoredPosition: {x: 397.5, y: -607.5}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &63916516
@@ -703,6 +704,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 63916519}
+        m_TargetAssemblyTypeName: MaterialSwap, Assembly-CSharp
+        m_MethodName: ChangeMaterial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1350722993}
         m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
         m_MethodName: ButtonSound
@@ -753,6 +766,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63916514}
   m_CullTransparentMesh: 1
+--- !u!114 &63916519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63916514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a53db38546ba047a68c31543f762be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skinMeshRenderer: {fileID: 0}
+  model: CatBody
+  material: {fileID: 2100000, guid: e3dcc72fc500fa440996909f22ea9691, type: 2}
+  colourPickerControl: {fileID: 1783539675}
+  newColour: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &68010396
 GameObject:
   m_ObjectHideFlags: 0
@@ -8907,7 +8937,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 397.5, y: -607.5}
+  m_AnchoredPosition: {x: 177.5, y: -607.5}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1244095630
@@ -10116,7 +10146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 177.5, y: -607.5}
+  m_AnchoredPosition: {x: 397.5, y: -387.5}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1396601443
@@ -12114,7 +12144,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GINGER
+  m_text: fur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8244e21928adfa645b58c7027ab4339c, type: 2}
   m_sharedMaterial: {fileID: 8731559523111583071, guid: 8244e21928adfa645b58c7027ab4339c, type: 2}
@@ -12141,8 +12171,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12540,9 +12570,9 @@ RectTransform:
   - {fileID: 1161505864}
   - {fileID: 184587459}
   - {fileID: 1792887529}
-  - {fileID: 63916515}
   - {fileID: 1396601442}
   - {fileID: 1244095629}
+  - {fileID: 63916515}
   m_Father: {fileID: 311159191}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
