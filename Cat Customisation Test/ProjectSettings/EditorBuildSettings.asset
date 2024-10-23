@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Customisation.unity
     guid: 3f7e597399170544fa52c14cc4ad3f6b
+  - enabled: 1
+    path: Assets/Scenes/Photo.unity
+    guid: ebc1fd15eada2804684733a9ec0c00a6
   m_configObjects: {}

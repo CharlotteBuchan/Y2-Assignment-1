@@ -24,6 +24,8 @@ public class Rotate : MonoBehaviour
     // Rotates model if mouse touched in UI element
     void Update()
     {
+        UILayer = LayerMask.NameToLayer("Rotation Bounds");
+
         if (Input.GetMouseButtonDown(0) & IsPointerOverUIElement())
         {
             isRotating = true;

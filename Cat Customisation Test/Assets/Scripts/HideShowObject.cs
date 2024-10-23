@@ -8,7 +8,6 @@ public class HideShowObject : MonoBehaviour
     [SerializeField] private GameObject model;
     [SerializeField] private GameObject UI;
 
-
     private void Start()
     {
         model = GameObject.Find(modelName);
