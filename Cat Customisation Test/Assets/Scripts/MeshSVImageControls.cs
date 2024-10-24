@@ -4,14 +4,14 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DogSVImageControls : MonoBehaviour, IDragHandler, IPointerClickHandler
+public class MeshSVImageControls : MonoBehaviour, IDragHandler, IPointerClickHandler
 {
     [SerializeField]
     private Image pickerImage;
 
     private RawImage SVimage;
 
-    private DogColourPickerControl CC;
+    private MeshColourPickerControl CC;
 
     public GameObject pickerHolder;
 
@@ -25,7 +25,7 @@ public class DogSVImageControls : MonoBehaviour, IDragHandler, IPointerClickHand
     private void Awake()
     {
         SVimage = GetComponent<RawImage>();
-        CC = FindObjectOfType<DogColourPickerControl>();
+        CC = FindObjectOfType<MeshColourPickerControl>();
         rectTransform = GetComponent<RectTransform>();
 
         

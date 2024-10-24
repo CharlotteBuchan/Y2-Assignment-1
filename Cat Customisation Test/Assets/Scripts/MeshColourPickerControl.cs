@@ -3,7 +3,7 @@ using UnityEngine;
 using TMPro;
 //using System.Drawing;
 
-public class DogColourPickerControl : MonoBehaviour
+public class MeshColourPickerControl : MonoBehaviour
 {
 
     public float currentHue, currentsat, currentVal;
@@ -22,13 +22,13 @@ public class DogColourPickerControl : MonoBehaviour
     [SerializeField]
     private string model;
 
-    public MeshRenderer skinMeshRenderer;
+    public MeshRenderer MeshRenderer;
 
     public Color currentColour;
 
     private void Start()
     {
-        skinMeshRenderer = GameObject.Find(model).GetComponent<MeshRenderer>();
+        MeshRenderer = GameObject.Find(model).GetComponent<MeshRenderer>();
 
         CreateHueImage();
 
@@ -122,7 +122,7 @@ public class DogColourPickerControl : MonoBehaviour
 
         hexInputField.text = ColorUtility.ToHtmlStringRGB(currentColour);
 
-        skinMeshRenderer.material.SetColor("_Color", currentColour);
+        MeshRenderer.material.SetColor("_Color", currentColour);
 
         GetColor();
     }

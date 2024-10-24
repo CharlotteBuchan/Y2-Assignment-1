@@ -2286,7 +2286,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 0.33333334
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -2630,7 +2630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8a53db38546ba047a68c31543f762be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinMeshRenderer: {fileID: 0}
+  skinMeshRenderer: {fileID: 848356806}
   model: CatBody
   material: {fileID: 2100000, guid: 4b8c5efc22fbb76408d0cfd82a81d90c, type: 2}
   colourPickerControl: {fileID: 1783539675}
@@ -2857,8 +2857,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1582720939}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.6666667, y: 0}
+  m_AnchorMax: {x: 0.6666667, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3196,21 +3196,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.622932, b: 0.6084906, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1751968359, guid: 05f9ce209767b8c48a89c525d94107a2, type: 3}
+  m_Sprite: {fileID: -675874833, guid: 05f9ce209767b8c48a89c525d94107a2, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 0.33333334
   m_FillClockwise: 1
-  m_FillOrigin: 1
+  m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 0.75
 --- !u!222 &261501140
@@ -4066,7 +4066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shapeSlider: {fileID: 331989570}
   value: 0
-  model: CatBody
+  model: DogBody
   shapeKey: 4
 --- !u!114 &331989570
 MonoBehaviour:
@@ -4918,6 +4918,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1327779261}
+        m_TargetAssemblyTypeName: HideShowObject, Assembly-CSharp
+        m_MethodName: HideOrShow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 640768836}
         m_TargetAssemblyTypeName: HideShowObject, Assembly-CSharp
         m_MethodName: Hide
@@ -4933,18 +4945,6 @@ MonoBehaviour:
       - m_Target: {fileID: 2144671840}
         m_TargetAssemblyTypeName: HideShowObject, Assembly-CSharp
         m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1327779261}
-        m_TargetAssemblyTypeName: HideShowObject, Assembly-CSharp
-        m_MethodName: Show
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5277,7 +5277,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 0.8333333
   m_FillClockwise: 1
   m_FillOrigin: 1
   m_UseSpriteMesh: 0
@@ -6589,7 +6589,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -8244,18 +8244,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 424493663}
-        m_TargetAssemblyTypeName: HideShowObject, Assembly-CSharp
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2144671840}
         m_TargetAssemblyTypeName: HideShowObject, Assembly-CSharp
         m_MethodName: HideOrShow
@@ -8268,9 +8256,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 424493663}
+        m_TargetAssemblyTypeName: HideShowObject, Assembly-CSharp
+        m_MethodName: Hide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1327779261}
         m_TargetAssemblyTypeName: HideShowObject, Assembly-CSharp
-        m_MethodName: HideOrShow
+        m_MethodName: Hide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8438,7 +8438,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Siamese
+  m_text: T.B.A
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8244e21928adfa645b58c7027ab4339c, type: 2}
   m_sharedMaterial: {fileID: 8731559523111583071, guid: 8244e21928adfa645b58c7027ab4339c, type: 2}
@@ -8897,7 +8897,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TABBY
+  m_text: 'SHIBA
+
+    INU'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8244e21928adfa645b58c7027ab4339c, type: 2}
   m_sharedMaterial: {fileID: 8731559523111583071, guid: 8244e21928adfa645b58c7027ab4339c, type: 2}
@@ -8924,8 +8926,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9028,7 +9030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shapeSlider: {fileID: 727583327}
   value: 0
-  model: CatBody
+  model: DogBody
   shapeKey: 3
 --- !u!114 &727583327
 MonoBehaviour:
@@ -9077,7 +9079,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 50
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -9143,14 +9145,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.622932, b: 0.6084906, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -675874833, guid: 05f9ce209767b8c48a89c525d94107a2, type: 3}
+  m_Sprite: {fileID: 1751968359, guid: 05f9ce209767b8c48a89c525d94107a2, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9627,8 +9629,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1742879080}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.6666667, y: 0}
+  m_AnchorMax: {x: 0.6666667, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10135,7 +10137,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TUXEDO
+  m_text: 'Husky
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8244e21928adfa645b58c7027ab4339c, type: 2}
   m_sharedMaterial: {fileID: 8731559523111583071, guid: 8244e21928adfa645b58c7027ab4339c, type: 2}
@@ -10249,8 +10253,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1027515213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.6666667, y: 0}
+  m_AnchorMax: {x: 0.6666667, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -12946,7 +12950,7 @@ GameObject:
   - component: {fileID: 1077361730}
   - component: {fileID: 1077361729}
   m_Layer: 5
-  m_Name: Tabby
+  m_Name: Shiba Inu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12985,9 +12989,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skinMeshRenderer: {fileID: 0}
-  model: CatBody
-  material: {fileID: 2100000, guid: 4b8c5efc22fbb76408d0cfd82a81d90c, type: 2}
-  colourPickerControl: {fileID: 0}
+  model: DogBody
+  material: {fileID: 2100000, guid: cae04b57cf9754448ad3770b697b4f18, type: 2}
+  colourPickerControl: {fileID: 2116263838}
   newColour: {r: 1, g: 1, b: 1, a: 0}
 --- !u!114 &1077361730
 MonoBehaviour:
@@ -13308,8 +13312,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 733583934}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.33333334, y: 0}
+  m_AnchorMax: {x: 0.33333334, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -13912,7 +13916,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 0.75
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -14176,7 +14180,7 @@ GameObject:
   - component: {fileID: 1163252863}
   - component: {fileID: 1163252862}
   m_Layer: 5
-  m_Name: Siamese
+  m_Name: T.B.A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14215,9 +14219,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skinMeshRenderer: {fileID: 0}
-  model: CatBody
-  material: {fileID: 2100000, guid: 69bc6c0198da5b74b890e740cb023a93, type: 2}
-  colourPickerControl: {fileID: 0}
+  model: DogBody
+  material: {fileID: 0}
+  colourPickerControl: {fileID: 2116263838}
   newColour: {r: 1, g: 1, b: 1, a: 0}
 --- !u!114 &1163252863
 MonoBehaviour:
@@ -14433,6 +14437,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.87227577
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.87227577
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.87227577
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3022935
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.068330765
+      objectReference: {fileID: 0}
     - target: {fileID: 7603786706384944740, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
       propertyPath: m_Quality
       value: 0
@@ -14522,11 +14550,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2046712820}
   m_SourcePrefab: {fileID: 100100000, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
---- !u!23 &1195631467 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 6745302439343835087, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
-  m_PrefabInstance: {fileID: 1755157992}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1202808274
 GameObject:
   m_ObjectHideFlags: 0
@@ -14697,7 +14720,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2116263838}
-        m_TargetAssemblyTypeName: DogColourPickerControl, Assembly-CSharp
+        m_TargetAssemblyTypeName: ColourPickerControl, Assembly-CSharp
         m_MethodName: UpdateSVImage
         m_Mode: 1
         m_Arguments:
@@ -14884,7 +14907,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 0.33333334
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -15696,8 +15719,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 290831966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -15793,7 +15816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shapeSlider: {fileID: 1282631088}
   value: 0
-  model: CatBody
+  model: DogBody
   shapeKey: 0
 --- !u!114 &1282631088
 MonoBehaviour:
@@ -15838,11 +15861,11 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1078069342}
   m_FillRect: {fileID: 261501138}
   m_HandleRect: {fileID: 1078069341}
-  m_Direction: 1
-  m_MinValue: -200
-  m_MaxValue: 100
+  m_Direction: 0
+  m_MinValue: -50
+  m_MaxValue: 150
   m_WholeNumbers: 0
-  m_Value: 50
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -16204,7 +16227,7 @@ GameObject:
   - component: {fileID: 1323661348}
   - component: {fileID: 1323661347}
   m_Layer: 5
-  m_Name: Tuxedo
+  m_Name: Husky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16243,9 +16266,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skinMeshRenderer: {fileID: 0}
-  model: CatBody
-  material: {fileID: 2100000, guid: 2d77a6c6208b59f4bafa0be9534bb06f, type: 2}
-  colourPickerControl: {fileID: 0}
+  model: DogBody
+  material: {fileID: 2100000, guid: 907293d3623ba65498eca94958e359ba, type: 2}
+  colourPickerControl: {fileID: 2116263838}
   newColour: {r: 1, g: 1, b: 1, a: 0}
 --- !u!114 &1323661348
 MonoBehaviour:
@@ -16912,6 +16935,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!137 &1377877894 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -8016412588606473749, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+  m_PrefabInstance: {fileID: 1755157992}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1378555836
 GameObject:
   m_ObjectHideFlags: 0
@@ -17495,8 +17523,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 239768551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.33333334, y: 0}
+  m_AnchorMax: {x: 0.33333334, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -17595,7 +17623,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Calico
+  m_text: T.B.A
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8244e21928adfa645b58c7027ab4339c, type: 2}
   m_sharedMaterial: {fileID: 8731559523111583071, guid: 8244e21928adfa645b58c7027ab4339c, type: 2}
@@ -18835,8 +18863,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1248975634}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.33333334, y: 0}
+  m_AnchorMax: {x: 0.33333334, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -19621,6 +19649,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8016412588606473749, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8016412588606473749, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: -0.11993694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8016412588606473749, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 2.016142
+      objectReference: {fileID: 0}
+    - target: {fileID: -8016412588606473749, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 1.4872537
+      objectReference: {fileID: 0}
+    - target: {fileID: -8016412588606473749, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 1.2161447
+      objectReference: {fileID: 0}
+    - target: {fileID: -8016412588606473749, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 2.0271044
+      objectReference: {fileID: 0}
+    - target: {fileID: -8016412588606473749, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8016412588606473749, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: faa6f09a927636b418856be1e369d1e3, type: 2}
+    - target: {fileID: -8016412588606473749, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 40b7e3ec0624e9d43846294b49572da5, type: 2}
+    - target: {fileID: -8016412588606473749, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[3]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8016412588606473749, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[4]
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -19666,12 +19738,20 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -466329591000292508, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -466329591000292508, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
       propertyPath: m_Name
       value: DogModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6745302439343835087, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
       propertyPath: m_CastShadows
@@ -19685,6 +19765,18 @@ PrefabInstance:
       propertyPath: m_DynamicOccludee
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6745302439343835087, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745302439343835087, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: faa6f09a927636b418856be1e369d1e3, type: 2}
+    - target: {fileID: 6745302439343835087, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 34f31820984209a4b9e54daf4961d901, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20143,7 +20235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shapeSlider: {fileID: 1800399859}
   value: 0
-  model: CatBody
+  model: DogBody
   shapeKey: 2
 --- !u!114 &1800399859
 MonoBehaviour:
@@ -20189,10 +20281,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 166478597}
   m_HandleRect: {fileID: 1427996660}
   m_Direction: 0
-  m_MinValue: -100
+  m_MinValue: -50
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 50
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -20284,7 +20376,7 @@ GameObject:
   - component: {fileID: 1808987135}
   - component: {fileID: 1808987134}
   m_Layer: 5
-  m_Name: Calico
+  m_Name: T.B.A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20323,9 +20415,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skinMeshRenderer: {fileID: 0}
-  model: CatBody
-  material: {fileID: 2100000, guid: cf7ba2c5fd0579543b2e992e2d24a56e, type: 2}
-  colourPickerControl: {fileID: 0}
+  model: DogBody
+  material: {fileID: 0}
+  colourPickerControl: {fileID: 2116263838}
   newColour: {r: 1, g: 1, b: 1, a: 0}
 --- !u!114 &1808987135
 MonoBehaviour:
@@ -20495,7 +20587,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 0.6666667
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -20769,7 +20861,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 0.6666667
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -20796,7 +20888,7 @@ GameObject:
   - component: {fileID: 1854825491}
   - component: {fileID: 1854825490}
   m_Layer: 5
-  m_Name: Plain Fur
+  m_Name: T.B.A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20835,10 +20927,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skinMeshRenderer: {fileID: 0}
-  model: CatBody
-  material: {fileID: 2100000, guid: e3dcc72fc500fa440996909f22ea9691, type: 2}
-  colourPickerControl: {fileID: 0}
-  newColour: {r: 0, g: 0, b: 0, a: 0}
+  model: DogBody
+  material: {fileID: 0}
+  colourPickerControl: {fileID: 2116263838}
+  newColour: {r: 1, g: 1, b: 1, a: 0}
 --- !u!114 &1854825491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20977,8 +21069,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 285060561}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.75, y: 0}
+  m_AnchorMax: {x: 0.75, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -21152,7 +21244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: fur
+  m_text: T.B.A
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8244e21928adfa645b58c7027ab4339c, type: 2}
   m_sharedMaterial: {fileID: 8731559523111583071, guid: 8244e21928adfa645b58c7027ab4339c, type: 2}
@@ -21950,8 +22042,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 643534289}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.16666669, y: 0}
+  m_AnchorMax: {x: 0.16666669, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -22804,7 +22896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shapeSlider: {fileID: 2005107318}
   value: 0
-  model: CatBody
+  model: DogBody
   shapeKey: 1
 --- !u!114 &2005107318
 MonoBehaviour:
@@ -22853,7 +22945,7 @@ MonoBehaviour:
   m_MinValue: -50
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 50
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -23131,7 +23223,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2024752905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f1c8835aea7fcd4296762e62ec670de, type: 3}
+  m_Script: {fileID: 11500000, guid: 5855ab17311ae85419aed5090eb111b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pickerImage: {fileID: 1106763055}
@@ -24120,7 +24212,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 0.6666667
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -24223,19 +24315,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2116263833}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 271a570ba0bce5944883191ed87e1155, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f9c06c9eac05e84f96085906ab0f6b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentHue: 1
   currentsat: 1
-  currentVal: 1
+  currentVal: 0
   hueImage: {fileID: 1657652916}
   satValImage: {fileID: 2024752909}
   outputImage: {fileID: 609372828}
   hueSlider: {fileID: 1212034043}
   hexInputField: {fileID: 2083915802}
   model: DogBody
-  skinMeshRenderer: {fileID: 1195631467}
+  skinMeshRenderer: {fileID: 1377877894}
   currentColour: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2126043598
 GameObject:
