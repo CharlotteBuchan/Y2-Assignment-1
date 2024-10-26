@@ -2036,7 +2036,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 131817330}
         m_TargetAssemblyTypeName: HideShowObject, Assembly-CSharp
-        m_MethodName: HideOrShow
+        m_MethodName: HideOrShowCollar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2072,8 +2072,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modelName: CatCollar
-  model: {fileID: 1599518064}
+  model: {fileID: 0}
   UI: {fileID: 0}
+  modelRenderer: {fileID: 0}
 --- !u!114 &131817331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5019,6 +5020,7 @@ MonoBehaviour:
   modelName: DogModel
   model: {fileID: 0}
   UI: {fileID: 0}
+  modelRenderer: {fileID: 0}
 --- !u!1 &424658027
 GameObject:
   m_ObjectHideFlags: 0
@@ -8345,6 +8347,7 @@ MonoBehaviour:
   modelName: CatModel
   model: {fileID: 0}
   UI: {fileID: 0}
+  modelRenderer: {fileID: 0}
 --- !u!1 &643534288
 GameObject:
   m_ObjectHideFlags: 0
@@ -14389,6 +14392,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -1461304994638716399, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
       propertyPath: m_CastShadows
       value: 0
@@ -14439,15 +14446,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4083501151425157549, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.87227577
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4083501151425157549, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.87227577
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4083501151425157549, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.87227577
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4083501151425157549, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14455,11 +14462,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4083501151425157549, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3022935
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4083501151425157549, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.068330765
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603786706384944740, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7603786706384944740, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
       propertyPath: m_Quality
@@ -14731,11 +14742,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &1225528562 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -516098083770646512, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
-  m_PrefabInstance: {fileID: 1755157992}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1225528564 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -1461304994638716399, guid: 2b33e1cc300ce0647a5b118e4db86dfc, type: 3}
@@ -16429,6 +16435,7 @@ MonoBehaviour:
   modelName: 
   model: {fileID: 0}
   UI: {fileID: 1327779259}
+  modelRenderer: {fileID: 0}
 --- !u!1 &1338374805
 GameObject:
   m_ObjectHideFlags: 0
@@ -18906,11 +18913,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584769860}
   m_CullTransparentMesh: 1
---- !u!1 &1599518064 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -516098083770646512, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
-  m_PrefabInstance: {fileID: 1163636750}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1599518066 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -1461304994638716399, guid: cedc29b23af0723458ec82fa7432cb79, type: 3}
@@ -23028,8 +23030,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modelName: DogCollar
-  model: {fileID: 1225528562}
+  model: {fileID: 0}
   UI: {fileID: 0}
+  modelRenderer: {fileID: 0}
 --- !u!114 &2007642680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23079,7 +23082,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2007642679}
         m_TargetAssemblyTypeName: HideShowObject, Assembly-CSharp
-        m_MethodName: HideOrShow
+        m_MethodName: HideOrShowCollar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24718,6 +24721,7 @@ MonoBehaviour:
   modelName: 
   model: {fileID: 0}
   UI: {fileID: 2144671838}
+  modelRenderer: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -7,11 +7,30 @@ public class HideShowObject : MonoBehaviour
     public string modelName;
     [SerializeField] private GameObject model;
     [SerializeField] private GameObject UI;
+    public Renderer modelRenderer;
 
     private void Start()
     {
         model = GameObject.Find(modelName);
+        modelRenderer = model.GetComponent<Renderer>(); 
     }
+
+    public void HideOrShowCollar()
+    {
+        if (modelRenderer.enabled == false)
+        {
+            modelRenderer.enabled = true;
+        }
+        else if (modelRenderer.enabled == true)
+        {
+            modelRenderer.enabled = false;
+        }
+    }
+
+    /*public void ShowCollar()
+    {
+        modelRenderer.enabled = true;
+    }*/
 
     public void Hide()
     {
